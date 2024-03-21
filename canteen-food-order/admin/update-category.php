@@ -103,7 +103,7 @@
 
             <tr>
                 <td>
-                    <input type="hidden" name="current_iage" value="<?php echo $current_image; ?>">
+                    <input type="hidden" name="current_image" value="<?php echo $current_image; ?>">
                     <input type="hidden" name="id" value="<?php echo $id; ?>">
                     <input type="submit" name="submit" value="Update Category" class="btn-secondary"> 
                 </td>
@@ -194,7 +194,7 @@
             
 
                 //3. Update to DB
-                $sql2 = "UPDATE tbl_catgory SET
+                $sql2 = "UPDATE tbl_category SET
                     title = '$title',
                     image_name = '$image_name',
                     featured = '$featured',
