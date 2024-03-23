@@ -62,10 +62,11 @@
 
 <table class="tbl-full">
     <tr>
-        <th>N.</th>
+        <th>SN.</th>
         <th>Title</th>
         <th>Image</th>
-        <th>Fetured</th>
+        <th>Featured</th>
+        <th>Active</th>
         <th>Actions</th>
     </tr>
 

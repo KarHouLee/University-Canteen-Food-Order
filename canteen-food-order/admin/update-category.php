@@ -125,7 +125,7 @@
                 $active =$_POST['active'];
 
                 //2. Updating new image if selected
-                //Chech=k whether the image is selected or not
+                //Check whether the image is selected or not
                 if(isset($_FILES['image']['name']))
                 {
                     //Get the image details

@@ -26,6 +26,24 @@
                     unset($_SESSION['update']);
                 }
 
+                if(isset($_SESSION['user-not-found']))
+                {
+                    echo$_SESSION['user-not-found'];
+                    unset($_SESSION['user-not-found']);
+                }
+
+                if(isset($_SESSION['pwd-not-match']))
+                {
+                    echo$_SESSION['pwd-not-match'];
+                    unset($_SESSION['pwd-not-match']);
+                }
+
+                if(isset($_SESSION['change_pwd']))
+                {
+                    echo$_SESSION['change_pwd'];
+                    unset($_SESSION['change_pwd']);
+                }
+
             ?>
             <br><br><br>
 
@@ -36,7 +54,7 @@
 
             <table class="tbl-full">
                 <tr>
-                    <th>N.</th>
+                    <th>SN.</th>
                     <th>Fullname</th>
                     <th>Username</th>
                     <th>Actions</th>
@@ -47,6 +65,9 @@
                     $sql = "SELECT * FROM tbl_admin";
                     //Execute the Query
                     $res = mysqli_query($conn, $sql);
+
+                    //Create Serial Number Variable
+                    $sn=1;
 
                     //Check whether the Query is Executed of Not
                     if($res==TRUE)
@@ -74,14 +95,15 @@
                                 //Display the value in our table
                                 ?>
                          <tr>
-                             <td><?php echo $n++; ?></td>
+                              <td><?php echo $sn++; ?></td>
                               <td><?php echo $full_name; ?></td>
                               <td><?php echo $username; ?></td>
                             <td>
-                        <a href="<?php echo SITEURL; ?>admin/update-admin.php?id=<?php echo $id; ?>" class="btn-secondary">Update Admin</a>
-                        <a href="<?php echo SITEURL; ?>admin/delete-admin.php?id=<?php echo $id; ?>" class="btn-danger">Delete Admin</a>
-                    </td>
-                </tr>
+                                <a href="<?php echo SITEURL; ?>admin/update-password.php?id=<?php echo $id; ?>" class="btn-primary">Change Password</a>
+                                <a href="<?php echo SITEURL; ?>admin/update-admin.php?id=<?php echo $id; ?>" class="btn-secondary">Update Admin</a>
+                                <a href="<?php echo SITEURL; ?>admin/delete-admin.php?id=<?php echo $id; ?>" class="btn-danger">Delete Admin</a>
+                            </td>
+                        </tr>
 
                                 
                                 <?php
