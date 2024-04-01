@@ -54,7 +54,7 @@
 
             <table class="tbl-full">
                 <tr>
-                    <th>SN.</th>
+                    <th>S.N.</th>
                     <th>Fullname</th>
                     <th>Username</th>
                     <th>Actions</th>

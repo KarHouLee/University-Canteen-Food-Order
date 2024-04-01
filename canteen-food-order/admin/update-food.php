@@ -182,7 +182,7 @@
                     $image_name = $_FILES['image']['name'];//New Image Name
 
                      //Check whether the image is available or not
-                     if($image_name != "")
+                     if($image_name!= "")
                      {
                          //Image Available
                         //A. Upload the new Image
@@ -231,6 +231,10 @@
                           }
                       }
                 }
+                else
+                {
+                    $image_name = $current_image;
+                }
             }
             else
             {
@@ -243,7 +247,7 @@
                 title = '$title',
                 description = '$description',
                 price = '$price',
-                image_name = 'image_name',
+                image_name = '$image_name',
                 category_id = '$category',
                 featured = '$featured',
                 active = '$active'

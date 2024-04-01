@@ -47,7 +47,7 @@
 
             <table class="tbl-full">
                 <tr>
-                    <th>SN.</th>
+                    <th>S.N.</th>
                     <th>Title</th>
                     <th>Price</th>
                     <th>Image</th>
@@ -87,7 +87,7 @@
                               <tr>
                                     <td><?php echo $sn++; ?>. </td>
                                     <td><?php echo $title; ?></td>
-                                    <td>$<?php echo $price; ?></td>
+                                    <td>RM <?php echo $price; ?></td>
                                     <td>
                                         <?php 
                                             //Check whether we have image or not

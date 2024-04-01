@@ -62,7 +62,7 @@
 
 <table class="tbl-full">
     <tr>
-        <th>SN.</th>
+        <th>S.N.</th>
         <th>Title</th>
         <th>Image</th>
         <th>Featured</th>
@@ -111,7 +111,7 @@
                                 {
                                     //Display the Image
                                     ?>
-                                    <img src="<?php echo SITEURL; ?>images/category/<?php echo $image_name; ?>" width="100px" >
+                                    <img src="<?php echo SITEURL; ?>images/category/<?php echo $image_name; ?>" width="150px" >
 
                                     <?php
                                 }

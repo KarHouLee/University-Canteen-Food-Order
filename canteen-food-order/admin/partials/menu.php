@@ -7,7 +7,7 @@
 
 <html>
     <head>
-        <title>University Canteen Food Order - Home Page</title>
+        <title>Canteen Food Order - Home Page</title>
  
         <link rel="stylesheet" href="../css/admin.css">
 </head>

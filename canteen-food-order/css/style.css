@@ -10,6 +10,10 @@
     padding: 0 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+.food-search {
+    background-image: url('path/to/your/image.jpg');
+}
+
 .container{
     width: 80%;
     margin: 0 auto;
@@ -86,6 +90,14 @@ fieldset{
     border-radius: 5px;
 }
 
+.error{
+    padding: 2%;
+    color: red;
+}
+.success{
+    padding: 2%;
+    color: green;
+}
 
 /* CSSS for navbar section */
 
